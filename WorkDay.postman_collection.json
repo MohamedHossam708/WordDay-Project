@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "ffa7efae-488e-4c00-a631-864e9bd64885",
+		"name": "WorkDay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31197476"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "SignUP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"firstName\":\"test22\",\r\n        \"lastName\":\"test22\",\r\n        \"email\":\"6d23feab@emailabox.pro\",\r\n        \"password\":\"1234567\",\r\n        \"recoveryMail\":\"mohossam708@gmial.com\",\r\n        \"DOB\":\"4/23/1996\",\r\n        \"mobileNumber\":\"01111222\",\r\n        \"role\":\"User\"\r\n        \r\n        \r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"MohaemdHossam@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNGU5OWNiYWMxY2I5MTA1MWVjNDAyIiwiaWF0IjoxNzA3NDEwOTA3fQ.TClqpEob_nsTAxtmCoHqYwR_Z_uYZXRoHEMxM6hJQpE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mohamedhossam@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateUser/65c4e99cbac1cb91051ec402",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateUser",
+								"65c4e99cbac1cb91051ec402"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNGU5OWNiYWMxY2I5MTA1MWVjNDAyIiwiaWF0IjoxNzA3NDEwOTA3fQ.TClqpEob_nsTAxtmCoHqYwR_Z_uYZXRoHEMxM6hJQpE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/deleteUser/65c4e99cbac1cb91051ec402",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteUser",
+								"65c4e99cbac1cb91051ec402"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserData",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/userData/65c51b9c788bde7b5f0c9e54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userData",
+								"65c51b9c788bde7b5f0c9e54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "another userData",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updatePassword/65c51b9c788bde7b5f0c9e54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updatePassword",
+								"65c51b9c788bde7b5f0c9e54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"MohaemdHossam@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/forgetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"forgetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"MohaemdHossam@gmail.com\",\r\n    \"mobileNumber\":\"01111530343\",\r\n    \"otp\":\"hiTPeFK\",\r\n    \"password\":1234567\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/resetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recovery mail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"recoveryMail\":\"mohossam708@gmial.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/getRecoveryMail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getRecoveryMail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "CreateCompany",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"companyName\":\"Globemed\",\r\n        \"description\":\"medical insurance company\",\r\n        \"industry\":\"Healthcare\",\r\n        \"address\":\"Maadi\",\r\n        \"numberOfEmployess\":{\"min\":10 , \"max\":20},\r\n        \"companyEmail\":\"Globemed@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/CreateCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"CreateCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numberOfEmployess\":{\"min\":12 , \"max\":60}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateCompant/65c696e550690d213df8b86d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateCompant",
+								"65c696e550690d213df8b86d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete company",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/deleteCompany/65c696e550690d213df8b86d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteCompany",
+								"65c696e550690d213df8b86d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "company data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/companyData/65c7be6eb1dfe97b7dfb2b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"companyData",
+								"65c7be6eb1dfe97b7dfb2b2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search by name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Globemed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/findByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"findByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all applications for specific Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/getallTheApplications/65c7be82b1dfe97b7dfb2b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getallTheApplications",
+								"65c7be82b1dfe97b7dfb2b2f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "create job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\":\"field service rep\",\r\n    \"jobLocation\":\"Maadi\",\r\n    \"workingTime\":\"full-time\",\r\n    \"seniorityLevel\":\"Senior\",\r\n    \"jobDescription\":\"handling patients problem\",\r\n    \"technicalSkills\":[\"excel\", \"word\"],\r\n    \"softSkills\":[\"work under preusser\"],\r\n    \"companyName\":\"Globemed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createJob/65c7be6eb1dfe97b7dfb2b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createJob",
+								"65c7be6eb1dfe97b7dfb2b2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update job",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\":\"cs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateJob/65c7be82b1dfe97b7dfb2b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateJob",
+								"65c7be82b1dfe97b7dfb2b2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete job",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/deleteJob/65c7bf29fb67523ebefad1e9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteJob",
+								"65c7bf29fb67523ebefad1e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get jobs with companies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/getJobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getJobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get job with company name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/getOneJob?companyName=Globemed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getOneJob"
+							],
+							"query": [
+								{
+									"key": "companyName",
+									"value": "Globemed"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterd jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/FilterJob?jobLocation=Maadi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"FilterJob"
+							],
+							"query": [
+								{
+									"key": "jobLocation",
+									"value": "Maadi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apply an aplication",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjVjNTFiOWM3ODhiZGU3YjVmMGM5ZTU0IiwiaWF0IjoxNzA3NDE2NDgzfQ.tbNscykzdsI7s4lE3_CVbM2Rqi4gIqthrqiDsty9nFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userTechSkills[0]",
+									"value": "mmmmm",
+									"type": "text"
+								},
+								{
+									"key": "userSoftSkills[0]",
+									"value": "mmmmmm",
+									"type": "text"
+								},
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Users/Access/Downloads/Mohamed Hossam Cv.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/applyToJob/65c7be82b1dfe97b7dfb2b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"applyToJob",
+								"65c7be82b1dfe97b7dfb2b2f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
