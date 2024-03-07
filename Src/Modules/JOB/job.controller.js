@@ -114,7 +114,7 @@ export const getFilterdJob=asyncHandler(async(req,res,next)=>{
 
 
 
-  export const applyToJob=asyncHandler(async(req,res,send)=>{
+  export const applyToJob=asyncHandler(async(req,res,next)=>{
     // making sure that the user is snding the cv
     if (!req.file) return next(new Error("please uploade your cv"))
     // uploading the cv
